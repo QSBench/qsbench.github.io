@@ -47,69 +47,59 @@
   <section class="max-w-6xl mx-auto px-6 py-16">
     <h2 class="text-3xl font-semibold mb-12 text-center">Available Datasets</h2>
     
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Dataset 1 -->
+      <!-- Lite -->
       <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8 hover:border-cyan-400 transition">
         <h3 class="text-2xl font-semibold mb-2">QSBench Lite v1.0.0</h3>
         <p class="text-cyan-400 font-medium">20,000 circuits • 4 qubits</p>
-        <p class="text-slate-400 mt-4">
-          Small, fast dataset ideal for rapid prototyping, educational purposes and initial model testing.
-        </p>
-        <details class="mt-6">
-          <summary class="cursor-pointer text-cyan-400 hover:text-cyan-300 font-medium">Show full description →</summary>
-          <div class="mt-4 text-slate-300 text-sm leading-relaxed">
-            Random circuits, linear entanglement, global Z observable. Includes raw & transpiled QASM, adjacency matrix, gate statistics, gate entropy and deterministic splits.
-          </div>
-        </details>
+        <p class="text-slate-400 mt-4">Fast dataset for rapid prototyping and initial testing.</p>
         <a href="https://qsbench.bgng.io/products" class="mt-6 block text-center py-3 border border-slate-600 rounded-2xl hover:bg-slate-800 transition">
           View on Store →
         </a>
       </div>
 
-      <!-- Dataset 2 -->
+      <!-- Core -->
       <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8 hover:border-cyan-400 transition">
         <h3 class="text-2xl font-semibold mb-2">QSBench Core v1.0.0</h3>
         <p class="text-cyan-400 font-medium">75,000 circuits • 8 qubits</p>
-        <p class="text-slate-400 mt-4">
-          High-quality mixed circuit dataset for serious Quantum ML research and benchmarking.
-        </p>
-        <details class="mt-6">
-          <summary class="cursor-pointer text-cyan-400 hover:text-cyan-300 font-medium">Show full description →</summary>
-          <div class="mt-4 text-slate-300 text-sm leading-relaxed">
-            Mixed families (HEA, RealAmplitudes, QFT, etc.), full entanglement, mixed Z/X/Y observables, structural metrics (Meyer-Wallach entanglement, gate entropy) and more.
-          </div>
-        </details>
+        <p class="text-slate-400 mt-4">Mixed circuit families for serious QML research.</p>
         <a href="https://qsbench.bgng.io/products" class="mt-6 block text-center py-3 border border-slate-600 rounded-2xl hover:bg-slate-800 transition">
           View on Store →
         </a>
       </div>
 
-      <!-- Dataset 3 -->
+      <!-- Depolarizing -->
       <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8 hover:border-cyan-400 transition">
         <h3 class="text-2xl font-semibold mb-2">Depolarizing Noise Pack v1.0.0</h3>
         <p class="text-cyan-400 font-medium">150,000 circuits • 8 qubits</p>
-        <p class="text-slate-400 mt-4">
-          Realistic noisy dataset designed for noise robustness and error mitigation studies.
-        </p>
-        <details class="mt-6">
-          <summary class="cursor-pointer text-cyan-400 hover:text-cyan-300 font-medium">Show full description →</summary>
-          <div class="mt-4 text-slate-300 text-sm leading-relaxed">
-            Depolarizing noise (p=0.025), ideal vs noisy expectation values, explicit error targets, full metadata.
-          </div>
-        </details>
+        <p class="text-slate-400 mt-4">Realistic depolarizing noise for robustness studies.</p>
         <a href="https://qsbench.bgng.io/products" class="mt-6 block text-center py-3 border border-slate-600 rounded-2xl hover:bg-slate-800 transition">
           View on Store →
         </a>
       </div>
 
-      <!-- In Progress -->
-      <div class="bg-slate-900 border border-amber-500/30 rounded-3xl p-8">
-        <h3 class="text-2xl font-semibold mb-2 text-amber-400">Amplitude Damping v1.0.0</h3>
-        <p class="text-amber-300 font-medium">150,000 circuits • Generating now</p>
+      <!-- Amplitude Damping -->
+      <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8 hover:border-cyan-400 transition">
+        <h3 class="text-2xl font-semibold mb-2">Amplitude Damping v1.0.0</h3>
+        <p class="text-cyan-400 font-medium">150,000 circuits • 8 qubits</p>
+        <p class="text-slate-400 mt-4">Relaxation noise (T1-like) for realistic hardware simulation.</p>
+        <a href="https://qsbench.bgng.io/products" class="mt-6 block text-center py-3 border border-slate-600 rounded-2xl hover:bg-slate-800 transition">
+          View on Store →
+        </a>
+      </div>
+
+      <!-- Transpilation & Hardware Pack -->
+      <div class="bg-slate-900 border border-emerald-500/40 rounded-3xl p-8 hover:border-emerald-400 transition relative">
+        <div class="absolute -top-3 right-4 bg-emerald-500 text-emerald-950 text-xs font-bold px-3 py-1 rounded-full">NEW</div>
+        <h3 class="text-2xl font-semibold mb-2">Transpilation Hardware v1.0.0</h3>
+        <p class="text-emerald-400 font-medium">200,000 circuits • 10 qubits</p>
         <p class="text-slate-400 mt-4">
-          Next noisy dataset with amplitude damping model (p=0.012).
+          Large clean dataset optimized for transpilation and hardware-aware research. 10 qubits, depth 8.
         </p>
+        <a href="https://qsbench.bgng.io/products" class="mt-6 block text-center py-3 border border-emerald-500/50 text-emerald-400 rounded-2xl hover:bg-emerald-950 transition">
+          View on Store →
+        </a>
       </div>
 
     </div>
