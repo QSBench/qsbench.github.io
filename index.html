@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Основные SEO -->
+  <!-- SEO -->
   <title>QSBench — Ideal. Noisy. Reproducible. | Synthetic Quantum Datasets</title>
   <meta name="description" content="High-quality synthetic quantum datasets for Quantum Machine Learning, benchmarking, noise robustness, and hybrid quantum-classical research. Ideal and noisy expectation values with full metadata.">
   
-  <!-- Open Graph / Social -->
+  <!-- Open Graph -->
   <meta property="og:title" content="QSBench — Ideal. Noisy. Reproducible.">
   <meta property="og:description" content="Synthetic quantum datasets for QML and quantum research.">
   <meta property="og:type" content="website">
@@ -16,30 +16,44 @@
   <meta property="og:image" content="https://qsbench.github.io/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Keywords -->
-  <meta name="keywords" content="quantum machine learning, qml datasets, synthetic quantum data, quantum benchmarking, quantum noise dataset, qiskit dataset, quantum ml benchmark, depolarizing noise, amplitude damping">
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body class="bg-slate-950 text-slate-200">
 
   <!-- Hero -->
-  <section class="hero-bg py-20 border-b border-slate-800">
+  <section class="hero-bg py-20 border-b border-slate-800" style="background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);">
     <div class="max-w-5xl mx-auto px-6 text-center">
-      <!-- Лого здесь -->
+      <!-- Logo -->
       <div class="mb-6 flex justify-center">
         <div class="w-20 h-20 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl flex items-center justify-center text-4xl font-bold">
-          <img src="https://i.imgur.com/VyLgYtf.png">
+          QS
         </div>
       </div>
       
       <h1 class="text-5xl font-bold tracking-tight mb-3">QSBench</h1>
       <p class="text-4xl font-light text-cyan-400 mb-6">Ideal. Noisy. Reproducible.</p>
-      
       <p class="text-lg text-slate-300 max-w-3xl mx-auto">
         High-quality synthetic quantum datasets for Quantum Machine Learning, benchmarking, and hybrid quantum-classical research.
       </p>
+
+      <!-- Buttons -->
+      <div class="flex justify-center gap-4 mt-10">
+        <a href="https://github.com/QSBench/QSBench-Demo" 
+           target="_blank"
+           class="px-8 py-4 bg-white text-slate-900 font-semibold rounded-2xl hover:bg-cyan-400 transition flex items-center gap-2">
+          <i class="fab fa-github text-xl"></i> GitHub
+        </a>
+        <a href="https://huggingface.co/datasets/QSBench/QSBench-Core-v1.0.0-demo" 
+           target="_blank"
+           class="px-8 py-4 border border-slate-400 font-semibold rounded-2xl hover:border-white transition flex items-center gap-2">
+          <i class="fa-solid fa-database"></i> Hugging Face
+        </a>
+        <a href="https://qsbench.bgng.io/products" 
+           class="px-8 py-4 border border-slate-400 font-semibold rounded-2xl hover:border-white transition">
+          Full Catalog →
+        </a>
+      </div>
     </div>
   </section>
 
@@ -89,13 +103,13 @@
         </a>
       </div>
 
-      <!-- Transpilation & Hardware Pack -->
+      <!-- Transpilation Hardware -->
       <div class="bg-slate-900 border border-emerald-500/40 rounded-3xl p-8 hover:border-emerald-400 transition relative">
         <div class="absolute -top-3 right-4 bg-emerald-500 text-emerald-950 text-xs font-bold px-3 py-1 rounded-full">NEW</div>
         <h3 class="text-2xl font-semibold mb-2">Transpilation Hardware v1.0.0</h3>
         <p class="text-emerald-400 font-medium">200,000 circuits • 10 qubits</p>
         <p class="text-slate-400 mt-4">
-          Large clean dataset optimized for transpilation and hardware-aware research. 10 qubits, depth 8.
+          Large clean dataset optimized for transpilation and hardware-aware research.
         </p>
         <a href="https://qsbench.bgng.io/products" class="mt-6 block text-center py-3 border border-emerald-500/50 text-emerald-400 rounded-2xl hover:bg-emerald-950 transition">
           View on Store →
@@ -108,7 +122,7 @@
   <!-- Custom Request -->
   <section class="max-w-2xl mx-auto px-6 py-16 bg-slate-900 border border-slate-700 rounded-3xl mx-6">
     <h2 class="text-3xl font-semibold mb-2 text-center">Request a Custom Dataset</h2>
-    <p class="text-slate-400 text-center mb-8">Need specific parameters or a new noise model?</p>
+    <p class="text-slate-400 text-center mb-8">Need specific parameters or a new hardware-oriented dataset?</p>
     
     <form action="https://formsubmit.co/n.yankovich@mail.ru" method="POST" class="space-y-6">
       <input type="text" name="name" placeholder="Your name / organization" required class="w-full bg-slate-800 border border-slate-600 rounded-2xl px-6 py-4 focus:outline-none focus:border-cyan-400">
@@ -125,7 +139,7 @@
   </section>
 
   <footer class="border-t border-slate-800 py-12 text-center text-slate-500 text-sm">
-    <p>© 2026 QSBench • Synthetic Quantum Datasets</p>
+    <p>© 2026 QSBench • Synthetic Quantum Datasets for Research</p>
   </footer>
 
 </body>
